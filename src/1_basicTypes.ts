@@ -4,9 +4,9 @@ let firstName:string="Jack";
 
 let favouriteFruits:string[]=["banana","apple","orange"];
 //or
-let favouriteFruitsGenericArray: Array<string> =favouriteFruits;
+let favouriteFruitsGenericArray: Array<string> =["banana","apple","orange"];
 
-let simpleTuple:[string,string,boolean]=["value 1","value 2",true];
+let simpleTuple:[string,string,boolean,number]=["value 1","value 2",true,15];
 
 enum Color{
     Red,
@@ -14,7 +14,10 @@ enum Color{
     Blue
 }
 
+
+
 let favouriteColor:Color=Color.Blue;
+
 
 let typedoesntmatter:any="tete";
 typedoesntmatter=132;

@@ -4,8 +4,8 @@ var birthYear = 2014;
 var firstName = "Jack";
 var favouriteFruits = ["banana", "apple", "orange"];
 //or
-var favouriteFruitsGenericArray = favouriteFruits;
-var simpleTuple = ["value 1", "value 2", true];
+var favouriteFruitsGenericArray = ["banana", "apple", "orange"];
+var simpleTuple = ["value 1", "value 2", true, 15];
 var Color;
 (function (Color) {
     Color[Color["Red"] = 0] = "Red";
