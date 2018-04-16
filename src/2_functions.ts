@@ -61,5 +61,16 @@ function contatenateCustom2(...params:number[])
     console.log(params.join(""));
 }
 
+function concatenateCustom3(...params:number[])
+{
+    let val:string="";
+    params.forEach((value:number)=>{
+        val+=value;
+    });
+    console.log(val);
+}
+
+
+
 concatenateCustom(4,5,5,12,312,21);
 contatenateCustom2(123,12,312,3,123,12,3);

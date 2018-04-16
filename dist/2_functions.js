@@ -61,5 +61,16 @@ function contatenateCustom2() {
     }
     console.log(params.join(""));
 }
+function concatenateCustom3() {
+    var params = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        params[_i] = arguments[_i];
+    }
+    var val = "";
+    params.forEach(function (value) {
+        val += value;
+    });
+    console.log(val);
+}
 concatenateCustom(4, 5, 5, 12, 312, 21);
 contatenateCustom2(123, 12, 312, 3, 123, 12, 3);
