@@ -34,4 +34,38 @@ var Cat = (function (_super) {
 //Person - powinna zawierac prywatne wlasciwosci imie oraz nazwisko oraz opcjonalną właściwość address 
 //(może być edytowana tylko z metod klasy Person oraz pochodnych)
 //Employee - powinna zawierać własciwość PhoneNumber oraz metoda CallCustomer (przyjmującą argument typu Customer )
-//Customer - powinna zawierać właściwości PhoneNumber,ShoppingCard (lista wybranych produktów) oraz metode PrintProducts (wypisującą wszystkie produkty) 
+//Customer - powinna zawierać właściwości PhoneNumber,ShoppingCard (lista wybranych produktów) oraz metode PrintProducts (wypisującą wszystkie produkty)
+var Person = (function () {
+    function Person(name, surname, address) {
+        this.Name = name;
+        this.Surname = surname;
+        this.Address = address;
+    }
+    return Person;
+}());
+var Customer = (function (_super) {
+    __extends(Customer, _super);
+    function Customer(name, surname, phoneNumber, address) {
+        var _this = _super.call(this, name, surname) || this;
+        _this.PhoneNumber = phoneNumber;
+        _this.ShoppingCard = [];
+        _this.ShoppingCard.push(new Product("taczki", "taczki opis"));
+        _this.ShoppingCard.push(new Product("gruszki", "owoc"));
+        return _this;
+    }
+    Customer.prototype.printProducts = function () {
+        for (var i = 0; i < this.ShoppingCard.length; i++) {
+            console.log(this.ShoppingCard[i]);
+        }
+    };
+    return Customer;
+}(Person));
+var Product = (function () {
+    function Product(name, description) {
+        this.Name = name;
+        this.Description = name;
+    }
+    return Product;
+}());
+var Customer1 = new Customer("name 1", "surname 2", "ads", "ads");
+Customer1.printProducts();

@@ -5,13 +5,15 @@ class Dog{
 
     //Name oraz Sound to właściwości klasy
     Name:string;
+    CzajnikKolor:Color;
     readonly Sound:string="przypisanie inline";
     
     //Konstruktor - metoda wywoływana inicjalizacji nowego obiekty typu 'Dog' 
-    constructor(name:string)
+    constructor(name:string,czajnikKolor:Color)
     {
         this.Sound="przypisanie konstruktor"; // do readonly można przypisać w konstrukorze
         this.Name=name;
+        this.CzajnikKolor=czajnikKolor;
     }
 
     //metoda, która nie zwraca wartości
@@ -27,7 +29,7 @@ class Dog{
 
 }
 
-let dog1=new Dog("funfel");
+let dog1=new Dog("funfel",Color.Red);
 dog1.makeSound();// co zostanie wypisane w konsoli?
 
 // Zadanie

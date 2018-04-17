@@ -15,5 +15,5 @@ class MathOperations{
 console.log(MathOperations.add(4,5));
 console.log(MathOperations.divide(10,2));
 
-//Zadanie stwórz klase MathOperations mającą metody:
+//Zadanie stwórz klase GeometricOperations mającą metody:
 //RectangleCircuit, CircleCircuit

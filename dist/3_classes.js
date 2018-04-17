@@ -3,10 +3,11 @@
 // klasa jest domyślnie publiczna, jaki jest domyślny modyfikator dostępu klasy w C#? 
 var Dog = (function () {
     //Konstruktor - metoda wywoływana inicjalizacji nowego obiekty typu 'Dog' 
-    function Dog(name) {
+    function Dog(name, czajnikKolor) {
         this.Sound = "przypisanie inline";
         this.Sound = "przypisanie konstruktor"; // do readonly można przypisać w konstrukorze
         this.Name = name;
+        this.CzajnikKolor = czajnikKolor;
     }
     //metoda, która nie zwraca wartości
     Dog.prototype.makeSound = function () {
@@ -18,7 +19,7 @@ var Dog = (function () {
     };
     return Dog;
 }());
-var dog1 = new Dog("funfel");
+var dog1 = new Dog("funfel", Color.Red);
 dog1.makeSound(); // co zostanie wypisane w konsoli?
 // Zadanie
 // Zdefiniuj klase 'Teapot' (czajnik), powinna posiadać informacje o:
