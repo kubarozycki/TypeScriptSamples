@@ -54,6 +54,19 @@ class Person{
     }
 }
 
+class Employee extends Person{
+    Phone:string;
+    constructor(name:string,surname:string,phoneNumber:string,address?:string)
+    {
+        super(name,surname);
+        this.Phone=phoneNumber;
+    }
+
+    callCustomer(customerToCall:Customer):void{
+        console.log("dzwonie do:"+customerToCall.PhoneNumber);
+    }
+}
+
 class Customer extends Person{
 
     PhoneNumber:string;
@@ -82,6 +95,11 @@ class Product{
         this.Description=name;
     }
 }
+
+let Employee1=new Employee("empl1","surname 3","adasd","asd");
+Employee1.callCustomer(new Customer("asdasd","adsasd","asdasd","asdasd"));
+
+
 
 let Customer1=new Customer("name 1","surname 2","ads","ads");
 Customer1.printProducts();

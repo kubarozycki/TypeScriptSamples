@@ -43,6 +43,18 @@ var Person = (function () {
     }
     return Person;
 }());
+var Employee = (function (_super) {
+    __extends(Employee, _super);
+    function Employee(name, surname, phoneNumber, address) {
+        var _this = _super.call(this, name, surname) || this;
+        _this.Phone = phoneNumber;
+        return _this;
+    }
+    Employee.prototype.callCustomer = function (customerToCall) {
+        console.log("dzwonie do:" + customerToCall.PhoneNumber);
+    };
+    return Employee;
+}(Person));
 var Customer = (function (_super) {
     __extends(Customer, _super);
     function Customer(name, surname, phoneNumber, address) {
@@ -67,5 +79,7 @@ var Product = (function () {
     }
     return Product;
 }());
+var Employee1 = new Employee("empl1", "surname 3", "adasd", "asd");
+Employee1.callCustomer(new Customer("asdasd", "adsasd", "asdasd", "asdasd"));
 var Customer1 = new Customer("name 1", "surname 2", "ads", "ads");
 Customer1.printProducts();
