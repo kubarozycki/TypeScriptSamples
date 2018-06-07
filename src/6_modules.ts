@@ -12,3 +12,7 @@ export default function customConcat(...other:string[]):string{
     let result:string=other.join('');
     return result;
 }
+
+
+//Zadanie
+//Zaimportuj do skryptu main.ts klase MathOperations i przetestuj kazda z metod

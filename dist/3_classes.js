@@ -1,7 +1,7 @@
 "use strict";
 // Klasy znasz już z C# oraz JavaScript, będzie to tylko szybka powtórka !
 // klasa jest domyślnie publiczna, jaki jest domyślny modyfikator dostępu klasy w C#? 
-var Dog = (function () {
+var Dog = /** @class */ (function () {
     //Konstruktor - metoda wywoływana inicjalizacji nowego obiekty typu 'Dog' 
     function Dog(name) {
         this.Sound = "przypisanie inline";

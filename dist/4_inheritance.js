@@ -9,7 +9,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Animal = (function () {
+var Animal = /** @class */ (function () {
     function Animal(name) {
         //private property - można zmienić jej wartość tylko z metod klasy
         this.hasTail = true;
@@ -20,7 +20,7 @@ var Animal = (function () {
     };
     return Animal;
 }());
-var Cat = (function (_super) {
+var Cat = /** @class */ (function (_super) {
     __extends(Cat, _super);
     function Cat(catName, age) {
         var _this = _super.call(this, catName) || this;
@@ -34,4 +34,4 @@ var Cat = (function (_super) {
 //Person - powinna zawierac prywatne wlasciwosci imie oraz nazwisko oraz opcjonalną właściwość address 
 //(może być edytowana tylko z metod klasy Person oraz pochodnych)
 //Employee - powinna zawierać własciwość PhoneNumber oraz metoda CallCustomer (przyjmującą argument typu Customer )
-//Customer - powinna zawierać właściwości PhoneNumber,ShoppingCard (lista wybranych produktów) oraz metode PrintProducts (wypisującą wszystkie produkty) 
+//Customer - powinna zawierać właściwości PhoneNumber,ShoppingCard (lista wybranych produktów) oraz metode PrintProducts (wypisującą wszystkie produkty)

@@ -1,5 +1,5 @@
 "use strict";
-var MathOperations = (function () {
+var MathOperations = /** @class */ (function () {
     function MathOperations() {
     }
     //metoda statyczna
@@ -15,4 +15,4 @@ var MathOperations = (function () {
 console.log(MathOperations.add(4, 5));
 console.log(MathOperations.divide(10, 2));
 //Zadanie stwórz klase MathOperations mającą metody:
-//RectangleCircuit, CircleCircuit 
+//RectangleCircuit, CircleCircuit

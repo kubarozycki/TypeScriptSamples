@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var x = 4;
 exports.y = x;
-var MathOperations = (function () {
+var MathOperations = /** @class */ (function () {
     function MathOperations() {
     }
     MathOperations.add = function (x, y) {
@@ -20,3 +20,5 @@ function customConcat() {
     return result;
 }
 exports.default = customConcat;
+//Zadanie
+//Zaimportuj do skryptu main.ts klase MathOperations i przetestuj kazda z metod

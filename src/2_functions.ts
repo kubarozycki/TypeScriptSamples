@@ -60,4 +60,4 @@ manyParams(4,"first","second","third","fourth");
 //Stwórz funkcje:
 //multiply dla 3 liczb całkowitych
 //printWall, przyjmująca i wypisująca 'Maluje sciane na {{kolor}}', wywoływaną natychmiast dla koloru czerwonego
-//stwórz funkcję concateNate, która przyjmie dowolną ilość wartości typu number i połączy je w jeden łańcuch znaków 
+//stwórz funkcję concat, która przyjmie dowolną ilość wartości typu number i połączy je w jeden łańcuch znaków 
