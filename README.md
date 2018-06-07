@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/14804823/41083083-9cf8bc10-6a30-11e8-9626-813e16dabd59.png)
+
 Steps to build typescript environment:
 
 1. Install node.js
