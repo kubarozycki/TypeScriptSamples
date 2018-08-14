@@ -4,7 +4,7 @@ while (i > 0) {
     console.log(i--);
 }
 //Zadanie
-//Stworz funkcje, przyjmujaca 1 argument (x) i obliczy silnie 
+//Stwórz funkcję, przyjmujacą 1 argument (x) i obliczającą silnie. 
 
 
 let numbArr: number[] = [1, 2, 3, 123, 123, 123, 4];
@@ -12,7 +12,7 @@ for (var x: number = 0; x < numbArr.length; x++) {
     console.log(numbArr[x]);
 }
 //Zadanie:
-//Stworz petle, ktora znajdzie najmniejszy oraz najwiekszy element tablicy 'numbArr'
+//Stwórz pętle, która znajdzie najmniejszy oraz największy element tablicy 'numbArr'.
 
 
 let names: string[] = ['Ala', 'Hania', 'Tomek', 'Lucek','Kajetan','Zofia'];
@@ -22,4 +22,4 @@ for(let name in names)
 }
 
 //Zadanie:
-//Stworz petle, ktora posortuje tablice malejaco
+//Stwórz pętle, która posortuje tablice malejaco.
